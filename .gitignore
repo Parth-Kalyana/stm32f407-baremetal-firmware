@@ -1,0 +1,39 @@
+# =========================
+# Build Output
+# =========================
+build/
+Debug/
+Release/
+
+*.o
+*.obj
+*.d
+*.elf
+*.axf
+*.bin
+*.hex
+*.map
+*.lst
+
+# =========================
+# VS Code
+# =========================
+.vscode/ipch/
+.vscode/*.db
+
+# Keep launch/tasks/settings if you want to share them
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/c_cpp_properties.json
+
+# =========================
+# Personal Notes
+# =========================
+learning.md
+
+# =========================
+# OS Files
+# =========================
+Thumbs.db
+.DS_Store
