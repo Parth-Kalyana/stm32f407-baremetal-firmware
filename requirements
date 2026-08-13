@@ -1,0 +1,7 @@
+arm-none-eabi-gcc
+arm-none-eabi-objcopy
+arm-none-eabi-size
+arm-none-eabi-readelf
+arm-none-eabi-nm
+make
+openocd

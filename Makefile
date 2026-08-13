@@ -26,7 +26,7 @@ OBJ = build/main.o
 OBJ += build/startup.o
 OBJ += build/system_stm32f4xx.o
 
-all: build/$(TARGET).elf
+all: build/firmware.elf build/firmware.bin
 
 build/$(TARGET).elf: $(OBJ)
 	$(CC) $(CFLAGS) $(LDFLAGS) $^ -o $@
@@ -42,6 +42,9 @@ build/startup.o: startup/startup_stm32f407xx.s
 build/system_stm32f4xx.o: cmsis/device/system_stm32f4xx.c
 	mkdir -p build
 	$(CC) $(CFLAGS) -c $< -o $@
+
+build/firmware.bin: build/firmware.elf
+	arm-none-eabi-objcopy -O binary $< $@
 
 clean:
 	rm -rf build
