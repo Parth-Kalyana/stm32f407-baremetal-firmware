@@ -4,8 +4,7 @@ Personal project. Bare-metal firmware for the STM32F407G-DISC1, built without HA
 straight from startup code + linker script + CMSIS, so I actually understand the
 boot pipeline instead of hiding behind a framework.
 
-This milestone = confirm the full toolchain pipeline works end to end (blink-nothing test,
-just proving Flash gets programmed and code executes).
+This milestone = confirm the full toolchain pipeline works end to end.
 
 ---
 
